@@ -20,6 +20,7 @@ API是软件系统不同组成部分衔接的约定，良好的接口设计可�
 **接口规范**
 
 * 请求方式:
+* 请求类型：
 * 请求URL: API地址 + 接口地址
     
     实例：http://b.533y.com/_datacf.gif?type=api&aid=XXXXXXXX&tid=XXXXXX​
