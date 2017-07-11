@@ -22,9 +22,9 @@ API是软件系统不同组成部分衔接的约定，良好的接口设计可�
 * 请求方式:
 * 请求类型：
 * 请求URL: API地址 + 接口地址
-    
-    实例：http://b.533y.com/_datacf.gif?type=api&aid=XXXXXXXX&tid=XXXXXX​
-
+```
+实例：http://b.533y.com/_datacf.gif?type=api&aid=XXXXXXXX&tid=XXXXXX​
+```
 * 请求数据
     * 请求参数
     * 请求数据
@@ -33,20 +33,27 @@ API是软件系统不同组成部分衔接的约定，良好的接口设计可�
 **数据类型**
 
 数据配方中数据支持5种数据类型，上传其它类型数据将会报错：
-    
-    int整型，超出范围可以上传，但显示状态有差别；
-    double浮点型，无限制
-    varchar字符型
-    date日期数据，格式需为“%Y-%m-%d %H:%M:%S”，如“2015-01-01 00:00:00”，不规范的格式会造成计算结果不准确；
-    时间戳类型：需要在源点数据平台Web端进行数据转换。
-
+```
+int整型，超出范围可以上传，但显示状态有差别；
+double浮点型，无限制
+varchar字符型
+date日期数据，格式需为“%Y-%m-%d %H:%M:%S”，如“2015-01-01 00:00:00”，不规范的格式会造成计算结果不准确；
+时间戳类型：需要在源点数据平台Web端进行数据转换。
+```
 **参数设置**
     
-    t：时间戳
-    sign：验证码（其值为md5（$Secret_key . $t））
-    data：数组（要插入的数据，按字段排序）
+```
+t：时间戳
+sign：验证码（其值为md5（$Secret_key . $t））
+data：数组（要插入的数据，按字段排序）
+```
 
-    实例：http:// b.533y .com/_datacf.gif?type=api&aid=XXXXXXXX&tid=XXXXXX&t=1495420036&sign=db34lsdfjaldjflajdf&data[]=2017-04-19 11:23:22&data[]=123&data[]=test
+
+```
+实例：http:// b.533y .com/_datacf.gif?type=api&aid=XXXXXXXX&tid=XXXXXX&t=1495420036&sign=db34lsdfjaldjflajdf&data[]=2017-04-19 11:23:22&data[]=123&data[]=test
+
+```
+
 
 **返回码**
 
